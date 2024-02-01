@@ -104,7 +104,7 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q8_0.gguf"
     ],
     "sha256": "a2f82242ac5e465037cbf1ed754f04f0be044ee196e1589905f9e4dcd0e6559d"
-  }
+  },
   {
     "name": "DeepseekCoder-33B-Base",
     "license_name": "Deepseek License",
@@ -115,7 +115,7 @@
       "https://huggingface.co/TheBloke/deepseek-coder-33B-base-GGUF/blob/main/deepseek-coder-33b-base.Q8_0.gguf"
     ],
     "sha256": "9b9210b7de8c26d94773146613ee86844a714aae997223355bb520927627feff"
-  }
+  },
   {
     "name": "DeepseekCoder-7B-Instruct",
     "license_name": "Deepseek License",
