@@ -103,14 +103,14 @@
   provider_url: https://huggingface.co/TheBloke/CodeLlama-13B-Python-GGUF
 
   urls:
-  - https://huggingface.co/TheBloke/CodeLlama-13B-Python-GGUF/resolve/main/codellama-13b-python.Q8_0.gguf
-  sha256: 39556aa95d5ec1be46571ff91a69beb168761f9d3dbdd775007cd23879971963
+  - https://huggingface.co/TheBloke/CodeLlama-13B-Python-GGUF/resolve/main/codellama-13b-python.Q4_K_M.gguf
+  sha256: fa2af128c4a793f17d8ae7e6f042f29c3a957a917207dcc2679e0b81607ecbb0
 
 
 - name: DeepseekCoder-7B-Instruct
   <<: *deepseek-series
-  provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5
+  provider_url: https://huggingface.co/LoneStriker/deepseek-coder-7b-instruct-v1.5-GGUF
   chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
   urls:
-  - https://huggingface.co/LoneStriker/deepseek-coder-7b-instruct-v1.5-GGUF/resolve/main/deepseek-coder-7b-instruct-v1.5-Q8_0.gguf
-  sha256: 7836fd479d16ae9beebf38de444de1fb86d257499b3e6dd0bc77c4d1b16eb45c
+  - https://huggingface.co/LoneStriker/deepseek-coder-7b-instruct-v1.5-GGUF/resolve/main/deepseek-coder-7b-instruct-v1.5-Q4_K_M.gguf
+  sha256: d76948555c437388dbb32efe09ccb1059b154202773ca3e9bbfa412fbab0e22e
